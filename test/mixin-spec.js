@@ -9,6 +9,7 @@ var Model = require('../lib/Model');
 var Message = require('../lib/Message');
 var Location = require('../lib/Location');
 
+
 describe('Model', function() {
   
   var model;
@@ -32,6 +33,7 @@ describe('Model', function() {
     });
     
     it('should set a new public property for each key in `schema`, using the same name as the key, and set to an initial value of null', function() {
+
       model.should.have.property('a').to.equal.null;
       model.should.have.property('b').to.equal.null;
       model.should.have.property('c').to.equal.null;
